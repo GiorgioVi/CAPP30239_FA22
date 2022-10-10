@@ -1,4 +1,4 @@
-# Giorgio Vidali
+# Week 01
 
 ![alt text](images/giorgio_class_exercise.jpg "Giorgio's Data!")
 
