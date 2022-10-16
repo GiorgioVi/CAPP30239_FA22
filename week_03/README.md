@@ -1,5 +1,7 @@
 # Week 03
 
+# Data
+
 ## Data Source
 This data is sourced directly from the Ethereum blockchain. I used an API to get this data this is a guide to the docs that I used ==> https://gallop.readme.io/docs
 At the moment the documentation is down but I already used it and have a clean data set which is in the Project Data folder.
@@ -18,3 +20,14 @@ None. Except maybe the process of datacleaning on javascript. I already have a v
 
 ## Source
 I would say this this primary source, it comes directly from the Ethereum blockchain.
+
+# Home Work + Class Notes
+
+## Class Notes
+
+Files covid.csv, index.html and script.js were the notes for how to make a barchart from class.
+
+## Homework
+
+Files library_visits_jan22.csv, homework.html, and homework.js were for the homework. This homework involved changing the class notes to use the data we had for library visits instead. The code was basically pre commented per the class notes. 
+
