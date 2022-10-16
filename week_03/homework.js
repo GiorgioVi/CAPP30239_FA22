@@ -1,4 +1,4 @@
-/* Bar chart for COVID country cases */
+/* Bar chart for Library visits */
 
 d3.csv("library_visits_jan22.csv").then(data => {
 
@@ -51,5 +51,26 @@ d3.csv("library_visits_jan22.csv").then(data => {
         .attr('y', d => y(d.num) + 15)
         .attr('text-anchor', 'middle')
         .style('fill', 'white');
+
+    // adding in X-axis name
+    svg.append("text")
+        .attr("class", "x label")
+        .attr("text-anchor", "end")
+        .attr("x", width / 2)
+        .attr("y", height + 6)
+        .style("font-size", "18px")
+        .text("Branch");
+
+    // adding in y-axis name
+
+    svg.append("text")
+        .attr("class", "y label")
+        .attr("text-anchor", "end")
+        .attr("y", -3)
+        .attr("x", 0)
+        .attr("dy", ".75em")
+        .style("font-size", "18px")
+        .attr("transform", "rotate(-90)")
+        .text("Number of Visits");
 
 });
