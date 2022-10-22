@@ -2,7 +2,7 @@
 
 Please find the following files: 
 
-homework_area.js, this has the code for the area chart.
+homework.js, this has the code for the area chart.
 
 homework.html, this has the html for the homework
 
