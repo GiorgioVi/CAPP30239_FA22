@@ -1,4 +1,4 @@
-d3.json('result.json').then(data => {
+d3.json('treemap_data.json').then(data => {
     let height = 600,
       width = 900;
   
