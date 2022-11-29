@@ -1,14 +1,17 @@
 /* D3 Area Chart */
 
-const height = 500,
+d3.csv('Data/monthly_sales_volume.csv').then(data => {
+
+
+    const height = 500,
     width = 800,
     margin = ({ top: 15, right: 30, bottom: 80, left: 40 });
-    
-const svg = d3.select("#chart")
+
+    const svg = d3.select("#area_volume_chart")
     .append("svg")
     .attr("viewBox", [0, 0, width, height]);
 
-d3.csv('sales_volume.csv').then(data => {
+
     let timeParse = d3.timeParse("%Y-%m-%d");
     
     for (let d of data) {
@@ -68,4 +71,3 @@ d3.csv('sales_volume.csv').then(data => {
       .attr("stroke", "steelblue");
     
   });
-
