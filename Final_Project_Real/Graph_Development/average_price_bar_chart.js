@@ -55,8 +55,8 @@ d3.csv("Data/monthly_average_price.csv").then(data => {
     bar.append('text') // add labels
         .text(d => d.size)
         .attr('x', d => x(d.month_year) + (x.bandwidth()/2))
-        .attr('y', d => y(d.size) + 40)
+        .attr('y', d => y(d.size) - 10)
         .attr('text-anchor', 'middle')
-        .style('fill', 'white');
+        .style('fill', 'black');
 
 });
