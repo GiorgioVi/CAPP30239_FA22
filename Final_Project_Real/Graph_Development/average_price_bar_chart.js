@@ -1,5 +1,5 @@
 
-d3.csv("Data/monthly_average_price.csv").then(data => {
+d3.csv("./Data/monthly_average_price.csv").then(data => {
 
     let timeParse = d3.timeParse("%Y-%m-%d");
 

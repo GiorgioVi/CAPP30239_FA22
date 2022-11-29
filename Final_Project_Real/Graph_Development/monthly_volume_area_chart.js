@@ -1,6 +1,6 @@
 /* D3 Area Chart */
 
-d3.csv('Data/monthly_sales_volume.csv').then(data => {
+d3.csv('./Data/monthly_sales_volume.csv').then(data => {
 
 
     const height = 500,
