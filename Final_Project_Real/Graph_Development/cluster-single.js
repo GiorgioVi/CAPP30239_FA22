@@ -11,9 +11,9 @@ d3.csv("./Data/clean_famous.csv").then(data => {
     .attr("height", height);
 
     
-  let rScale = d3.scaleLinear()
+  let rScale = d3.scaleLog()
     .range([5, 25])
-    .domain(d3.extent(data, d => d.log_price));
+    .domain(d3.extent(data, d => d.price));
 
   let colors = d3.scaleOrdinal()
     .range(['#B42F90', '#16B1AC', '#FF0909', '#6985DD', '#0BE304', '#9A303D', '#979883', '#FF09D3', '#FF7C09', '#EFE71F', '#7FA25A', '#7A57C7', '#804C13', '#C2C757', '#1F52EF'])
@@ -24,7 +24,7 @@ d3.csv("./Data/clean_famous.csv").then(data => {
     // .force('x', d3.forceX().x(width/2))
     // .force('y', d3.forceY().y(height/2))
     .force("center", d3.forceCenter().x(width / 2).y(height / 2))
-    .force("collision", d3.forceCollide().radius(d => rScale(d.log_price) + 1.5));
+    .force("collision", d3.forceCollide().radius(d => rScale(d.price) + 1.5));
 
   let g = svg.append("g")
     .attr("class", "group");
@@ -35,7 +35,7 @@ d3.csv("./Data/clean_famous.csv").then(data => {
       .join("circle")
       .attr("stroke", "#fff")
       .attr("stroke-width", 1.5)
-      .attr("r", d => rScale(d.log_price))
+      .attr("r", d => rScale(d.price))
       // .attr("fill", "red")
       .attr("fill", d => colors(d.period))
       .attr("opacity", 0.75)
@@ -46,7 +46,7 @@ d3.csv("./Data/clean_famous.csv").then(data => {
 
         tooltip
           .style("visibility", "visible")
-          .html(`<h3>${d.buyer}</h3><br />Price Paid: ${d.price}<br /><span style="text-transform: capitalize">Entertainment Category: ${d.period}</span>`);
+          .html(`<h3>${d.buyer}</h3><br />Price Paid: $${d.price}<br /><span style="text-transform: capitalize">Entertainment Category: ${d.period}</span>`);
       })
       .on("mousemove", function (event) {
         tooltip

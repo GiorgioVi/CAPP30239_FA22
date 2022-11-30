@@ -46,7 +46,7 @@ d3.csv("./Data/monthly_average_price.csv").then(data => {
         .attr("class", "bar");
 
     bar.append("rect") // add rect to bar group
-        .attr("fill", "steelblue")
+        .attr("fill", "green")
         .attr("x", d => x(d.month_year)) // x position attribute
         .attr("width", x.bandwidth()) // this width is the width attr on the element
         .attr("y", d => y(d.size)) // y position attribute

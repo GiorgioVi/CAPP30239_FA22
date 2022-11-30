@@ -67,7 +67,7 @@ d3.csv('./Data/monthly_sales_volume.csv').then(data => {
     svg.append("path")
       .datum(data)
       .attr("d", area) // this d is an attribute
-      .attr("fill", "steelblue")
-      .attr("stroke", "steelblue");
+      .attr("fill", "purple")
+      .attr("stroke", "purple");
     
   });
