@@ -40,6 +40,32 @@
       text-decoration: underline;
       font-weight: 500;
     }
+    .y-axis path.domain { 
+      display: none; 
+    }
+
+    .y-axis line {
+      stroke: #eee;
+      stroke-dasharray: 1px;
+    }
+
+    .country { 
+      cursor: default; 
+    }
+    
+    .country path {
+      stroke-width: 1.5;
+      opacity: 0.75;
+    }
+
+    .highlight path {
+      stroke: steelblue;
+      opacity: 1;
+    }
+
+    .highlight text { 
+      fill: steelblue; 
+    }
 
   </style>
 </head>
@@ -67,6 +93,13 @@
     <div id="average_price_chart"></div>
   </div>
 
+  <div id="container">
+    <h2>Asset Comparison Over Time</h2>
+    <p>Log Price
+    </p>
+    <div id="line_plot"></div>
+  </div>
+
   <h1> Data is sources from the Ethereum Blockchain and is accessed via Gallop API: https://gallop.readme.io/docs</h1>
 
 
@@ -74,5 +107,6 @@
   <script src="Graph_Development/monthly_volume_area_chart.js"></script>
   <script src="Graph_Development/tree_graph.js"></script>
   <script src="Graph_Development/average_price_bar_chart.js"></script>
+  <script src="Graph_Development/asset_compare.js"></script>
 </body>
 </html>
