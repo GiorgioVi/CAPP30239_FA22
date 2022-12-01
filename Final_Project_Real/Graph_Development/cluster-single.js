@@ -46,7 +46,7 @@ d3.csv("./Data/clean_famous.csv").then(data => {
 
         tooltip
           .style("visibility", "visible")
-          .html(`<h3>${d.buyer}</h3><br />Price Paid: $${d.price}<br /><span style="text-transform: capitalize">Entertainment Category: ${d.period}</span>`);
+          .html(`<h3>${d.buyer}</h3><br />Price Paid: ${d.price}<br /><span style="text-transform: capitalize">Entertainment Category: ${d.period}</span>`);
       })
       .on("mousemove", function (event) {
         tooltip
@@ -54,7 +54,7 @@ d3.csv("./Data/clean_famous.csv").then(data => {
           .style("left", (event.pageX + 10) + "px");
       })
       .on("mouseout", function () {
-        d3.select(this).attr("opacity", 0.75);
+        d3.select(this).attr("opacity", 1);
         tooltip.style("visibility", "hidden");
       })
   })
