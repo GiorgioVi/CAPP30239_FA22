@@ -46,12 +46,13 @@ d3.csv("./Data/clean_famous.csv").then(data => {
 
         tooltip
           .style("visibility", "visible")
-          .html(`<h3>${d.buyer}</h3><br />Price Paid: ${d.price}<br /><span style="text-transform: capitalize">Entertainment Category: ${d.period}</span>`);
+          .html(`<h3>${d.buyer}</h3><br />Price Paid: $${d.price}<br /><span style="text-transform: capitalize">Entertainment Category: ${d.period}</span>`);
       })
       .on("mousemove", function (event) {
         tooltip
           .style("top", (event.pageY - 10) + "px")
-          .style("left", (event.pageX + 10) + "px");
+          .style("left", (event.pageX + 10) + "px")
+          .style("background",'#BCC5F7');
       })
       .on("mouseout", function () {
         d3.select(this).attr("opacity", 1);

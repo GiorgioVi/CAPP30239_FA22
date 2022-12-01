@@ -3,19 +3,19 @@
 d3.csv("./Data/Cleaned_Asset_Prices.csv").then(data => {
 
 
-    let height = 350,
+  let height = 350,
     width = 800,
-    margin = ({ top: 25, right: 140, bottom: 35, left: 30 })
-    innerWidth = width - margin.left - margin.right;
+    margin = ({ top: 25, right: 140, bottom: 60, left: 40 })
+  innerWidth = width - margin.left - margin.right;
 
-    const svg = d3.select("#line_plot")
+  const svg = d3.select("#line_plot")
     .append("svg")
     .attr("viewBox", [0, 0, width, height]);
 
 
   let timeParse = d3.timeParse("%Y-%m");
 
-  let assets = new Set(); 
+  let assets = new Set();
 
   for (let d of data) {
     d.Date = timeParse(d.Date);
@@ -40,6 +40,15 @@ d3.csv("./Data/Cleaned_Asset_Prices.csv").then(data => {
       .tickFormat(d => d)
     );
 
+  svg.append("text")
+    .attr("class", "x-label")
+    .attr("text-anchor", "end")
+    .attr("x", width - margin.right + 40)
+    .attr("y", height)
+    .attr("dx", "0.5em")
+    .attr("dy", "-0.5em")
+    .text("Month");
+
   // X Axis second because we want it to be placed on top
   svg.append("g")
     .attr("transform", `translate(0,${height - margin.top})`)
@@ -47,15 +56,24 @@ d3.csv("./Data/Cleaned_Asset_Prices.csv").then(data => {
       .tickSizeOuter(0)
       .tickSizeInner(0)
     )
-        .selectAll('.tick text')
-                .attr("transform","rotate(45)");
+    .selectAll('.tick text')
+    .attr("transform", "rotate(45)");
+
+  svg.append("text")
+    .attr("class", "y-label")
+    .attr("text-anchor", "end")
+    .attr("x", -margin.top / 2)
+    .attr("dx", "-0.5em")
+    .attr("y", 9)
+    .attr("transform", "rotate(-90)")
+    .text("Natural Log of USD Price");
 
   let line = d3.line()
     .x(d => x(d.Date))
     .y(d => y(d.Value));
- 
+
   // looping through set
-  for (let asset of assets) { 
+  for (let asset of assets) {
     //.filter filters data in D3
     let assetData = data.filter(d => d.Asset === asset);
 
@@ -90,5 +108,5 @@ d3.csv("./Data/Cleaned_Asset_Prices.csv").then(data => {
       .attr("dominant-baseline", "middle")
       .attr("fill", "#999");
   }
-  
+
 });

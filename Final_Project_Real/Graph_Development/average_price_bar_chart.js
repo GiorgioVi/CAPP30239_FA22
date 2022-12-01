@@ -12,7 +12,7 @@ d3.csv("./Data/monthly_average_price.csv").then(data => {
 
     const height = 350,
           width = 800,
-          margin = ({ top: 25, right: 30, bottom: 60, left: 50 });
+          margin = ({ top: 25, right: 30, bottom: 60, left: 70 });
 
     let svg = d3.select("#average_price_chart")
         .append("svg")
@@ -38,6 +38,24 @@ d3.csv("./Data/monthly_average_price.csv").then(data => {
     svg.append("g")
         .attr("transform", `translate(${margin.left - 5},0)`)
         .call(d3.axisLeft(y));
+
+    svg.append("text")
+      .attr("class", "x-label")
+      .attr("text-anchor", "end")
+      .attr("x", width - margin.right)
+      .attr("y", height)
+      .attr("dx", "0.5em")
+      .attr("dy", "-0.5em") 
+      .text("Month");
+
+    svg.append("text")
+      .attr("class", "y-label")
+      .attr("text-anchor", "end")
+      .attr("x", -margin.top/2)
+      .attr("dx", "-0.5em")
+      .attr("y", 8)
+      .attr("transform", "rotate(-90)")
+      .text("Average Bored Ape Sale in Dollars");
 
     let bar = svg.selectAll(".bar") // create bar groups
         .append("g")
