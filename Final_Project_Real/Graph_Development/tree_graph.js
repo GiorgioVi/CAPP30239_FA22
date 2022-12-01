@@ -1,5 +1,5 @@
 d3.json('./Data/tree_data.json').then(data => {
-    let height = 600,
+    let height = 350,
       width = 900;
   
     const treemap = data => d3.treemap()

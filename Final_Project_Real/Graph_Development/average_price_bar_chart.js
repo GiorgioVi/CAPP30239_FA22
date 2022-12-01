@@ -10,7 +10,7 @@ d3.csv("./Data/monthly_average_price.csv").then(data => {
         d.month_year = timeFormatter(timeParse(d.month_year));
     };
 
-    const height = 600,
+    const height = 350,
           width = 800,
           margin = ({ top: 25, right: 30, bottom: 60, left: 50 });
 

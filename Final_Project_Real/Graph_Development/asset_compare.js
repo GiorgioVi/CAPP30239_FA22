@@ -3,7 +3,7 @@
 d3.csv("./Data/Cleaned_Asset_Prices.csv").then(data => {
 
 
-    let height = 500,
+    let height = 350,
     width = 800,
     margin = ({ top: 25, right: 140, bottom: 35, left: 30 })
     innerWidth = width - margin.left - margin.right;

@@ -3,7 +3,7 @@
 d3.csv('./Data/monthly_sales_volume.csv').then(data => {
 
 
-    const height = 500,
+    const height = 350,
     width = 800,
     margin = ({ top: 15, right: 30, bottom: 80, left: 40 });
 
@@ -55,9 +55,9 @@ d3.csv('./Data/monthly_sales_volume.csv').then(data => {
       .attr("text-anchor", "end")
       .attr("x", -margin.top/2)
       .attr("dx", "-0.5em")
-      .attr("y", 10)
+      .attr("y", 8)
       .attr("transform", "rotate(-90)")
-      .text("Sale Volume in Millions");
+      .text("Sale Volume in $Millions");
     
     let area = d3.area()
       .x(d => x(d.month_year))
