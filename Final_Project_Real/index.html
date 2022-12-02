@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bored Ape Yacht Club NFTs: From Digital Asset to Digital Identity</title>
   <style>
-     * {
+    * {
       font-family: Arial, Helvetica, sans-serif;
     }
 
@@ -16,22 +16,23 @@
       margin: 0 auto;
     }
 
-    #chart { 
-      width: 100%; 
+    #chart {
+      width: 100%;
     }
 
-    #explain{
+    #explain {
       padding-top: 10px;
       padding-right: 30px;
       padding-bottom: 30px;
       padding-left: 30px;
     }
+
     text {
       font-size: 10px;
     }
 
-    path.domain { 
-      display: none;  
+    path.domain {
+      display: none;
     }
 
     line {
@@ -46,8 +47,9 @@
       text-decoration: underline;
       font-weight: 500;
     }
-    .y-axis path.domain { 
-      display: none; 
+
+    .y-axis path.domain {
+      display: none;
     }
 
     .y-axis line {
@@ -55,51 +57,60 @@
       stroke-dasharray: 1px;
     }
 
-    .country { 
-      cursor: default; 
+    .country {
+      cursor: default;
     }
-    
+
     .country path {
       stroke-width: 1.5;
       opacity: 0.75;
     }
 
     .highlight path {
-      stroke: steelblue;
+      stroke: navy;
       opacity: 1;
     }
 
-    .highlight text { 
-      fill: steelblue; 
+    .highlight text {
+      fill: navy;
     }
-
   </style>
 </head>
 
 <body>
   <div id="container">
 
-  <H1>Bored Ape Yacht Club NFTs: Digital Asset to Digital Indentity</H1>
-  <h4>By Giorgio Vidali</h4>
+    <H1>Bored Ape Yacht Club NFTs: Digital Asset to Digital Indentity</H1>
+    <h4>By Giorgio Vidali</h4>
 
-  <p>
+    <p>
     <h2>
-        What are Bored Apes? 
-  </h2>
+      What are Bored Apes?
+    </h2>
 
-  <p>
-    Per their creator YugaLabs, The Bored Ape Yacht Club is a collection of 10,000 unique Bored Ape NFTs— unique digital collectibles living on the Ethereum blockchain. Since their release in 2021, Bored Apes have become a pillar of the NFT asset class and a sign of social status. Looking back, we need to understand how these assets grew to become important.
-  </p>
-</div>
+    <p>
+      Per their creator YugaLabs, The Bored Ape Yacht Club is a collection of 10,000 unique Bored Ape NFTs— unique
+      digital collectibles living on the Ethereum blockchain. Since their release in 2021, Bored Apes have become a
+      pillar of the NFT asset class and a sign of social status. Looking back, we need to understand how these assets
+      grew to become important.
+    </p>
+  </div>
 
 
 
   </p>
   <div id="container">
     <h2>Bored Ape Sale Volume from May 2021 to October 2022</h2>
-    <p> Bored Apes were released at the end of April 2021. Initially, only web3 and NFT fanatics were even aware of these assets. Many critics originally thought these assets which were supposedly 'valueless.' But only one month after its release, In May 2021, almost $25 Million of transactions with Bored Apes took place. Moreover, few would have predicted the surges of August 2021 and January 2022, where Bored Apes started having around $300 Million of monthly transactions. Or even in September 2021, Sotheby's would list a batch of 101 Bored Apes at auction. However, like every bull run, buyer liquidity stops entering the market. From May 2022, monthly transaction volume has continued to drop. Instead of going to zero as many 'experts' suspected, people still have traded these assets, perhaps because of financial opportunity or because people have become personally attached to their NFTs.
-    </p> 
-   <div id="area_volume_chart"></div>
+    <p> Bored Apes were released at the end of April 2021. Initially, only web3 and NFT fanatics were even aware of
+      these assets. Many critics originally thought these assets which were supposedly 'valueless.' But only one month
+      after its release, In May 2021, almost $25 Million of transactions with Bored Apes took place. Moreover, few would
+      have predicted the surges of August 2021 and January 2022, where Bored Apes started having around $300 Million of
+      monthly transactions. Or even in September 2021, Sotheby's would list a batch of 101 Bored Apes at auction.
+      However, like every bull run, buyer liquidity stops entering the market. From May 2022, monthly transaction volume
+      has continued to drop. Instead of going to zero as many 'experts' suspected, people still have traded these
+      assets, perhaps because of financial opportunity or because people have become personally attached to their NFTs.
+    </p>
+    <div id="area_volume_chart"></div>
   </div>
   <center>
     <h3> Batch of 101 Bored Apes listed at Sotheby's in August 2021 </h3>
@@ -111,11 +122,18 @@
   <br><br>
   <div id="container">
     <h2>Why Should we Care About Bored Ape Traits?</h2>
-    <p>One of the defining characteristics of Bored Apes is that each one is unique but is created from the same group of 168 traits. Having traits helps people associate with their apes and, in turn, can be used to represent owners on digital media. Doctors can buy apes with Lab Coats, and Ranchers can buy an Ape with Cowboy Hat. People can choose all types of traits, which ultimately leads to some having a strong following. Many valuation experts agree that Gold Fur is the most valuable, likely because it is the rarest trait. Ultimately, being able to choose a digital asset with traits that you like can be a demonstration of your personality. If you look on Twitter, many prominent members of the NFT community proudly brandish their Bored Apes as their profile pictures.
+    <p>One of the defining characteristics of Bored Apes is that each one is unique but is created from the same group
+      of 168 traits. Having traits helps people associate with their apes and, in turn, can be used to represent owners
+      on digital media. Doctors can buy apes with Lab Coats, and Ranchers can buy an Ape with Cowboy Hat. People can
+      choose all types of traits, which ultimately leads to some having a strong following. Many valuation experts agree
+      that Gold Fur is the most valuable, likely because it is the rarest trait. Ultimately, being able to choose a
+      digital asset with traits that you like can be a demonstration of your personality. If you look on Twitter, many
+      prominent members of the NFT community proudly brandish their Bored Apes as their profile pictures.
     </p>
     <br>
     <h2>Sale Volume in Millions by Bored Ape traits (zoomable)</h2>
-    <p>The following graph shows all associated sale volume with a given Bored Ape NFT trait. There are 7 trait categories each of which have many possible options.</p>
+    <p>The following graph shows all associated sale volume with a given Bored Ape NFT trait. There are 7 trait
+      categories each of which have many possible options.</p>
     <p>Viewing level: <span id="breadcrumbs"></span></p>
     <div id="chart"></div>
   </div>
@@ -125,8 +143,13 @@
   <div id="container">
 
     <h2> Bored Apes are Expensive
-      </h2>
-    <p> At release, a Bored Ape costed 0.08 Ether or around $236. Less than six months later, you would have had to fork over $100,000 to buy one. People often question why someone would spend such large sums on these 'jpegs.' If there is significant enough demand, and people suspect the price may rise, Bored Apes may appear as a lucrative investment. The one drawback of owning a Bored Ape is price volatility. In one year, the prices rose from a few thousand to hundreds of thousands, back to around a hundred thousand. If you bought early, you might have made a fortune, if you bought at the top... not so much.
+    </h2>
+    <p> At release, a Bored Ape costed 0.08 Ether or around $236. Less than six months later, you would have had to fork
+      over $100,000 to buy one. People often question why someone would spend such large sums on these 'jpegs.' If there
+      is significant enough demand, and people suspect the price may rise, Bored Apes may appear as a lucrative
+      investment. The one drawback of owning a Bored Ape is price volatility. In one year, the prices rose from a few
+      thousand to hundreds of thousands, back to around a hundred thousand. If you bought early, you might have made a
+      fortune, if you bought at the top... not so much.
     </p>
 
     <h2>Average Bored Ape Price by Month</h2>
@@ -138,11 +161,17 @@
   <div id="container">
     <h2>How do Bored Apes Compare to Major Cryptocurrencies?</h2>
 
-    <p> Only one month after their inception, one Bored Ape cost, on average, as much as one Ethereum. Only two months later, a Bored Ape was worth as much as one Bitcoin. Many questioned whether the Bored Ape price rose only because of the crypto bull run. If we look at February 2022, when crypto assets dropped, the Price of Bored Apes continued to grow. Still, when the crypto market started to crash around June, we saw the crossover effects in the price of a Bored Ape. It's difficult to predict the future, but many important figures claim that NFTs will become less correlated with crypto prices and swings. 
+    <p> Only one month after their inception, one Bored Ape cost, on average, as much as one Ethereum. Only two months
+      later, a Bored Ape was worth as much as one Bitcoin. Many questioned whether the Bored Ape price rose only because
+      of the crypto bull run. If we look at February 2022, when crypto assets dropped, the Price of Bored Apes continued
+      to grow. Still, when the crypto market started to crash around June, we saw the crossover effects in the price of
+      a Bored Ape. It's difficult to predict the future, but many important figures claim that NFTs will become less
+      correlated with crypto prices and swings.
     </p>
     <h2>Digital Asset Comparison Over Time</h2>
-    <p>The following graph shows the natural log of the price of a Bored Ape each month, to the natural log of the price of one Ethereum and Bitcoin, on the first
-      of the month. 
+    <p>The following graph shows the natural log of the price of a Bored Ape each month, to the natural log of the price
+      of one Ethereum and Bitcoin, on the first
+      of the month.
     </p>
     <div id="line_plot"></div>
   </div>
@@ -152,7 +181,13 @@
   <div id="container">
     <h2>Who bought that? How much???</h2>
 
-    <p>If you were early on Bored Apes, it would be reasonable that an average person would be able to purchase one. However, within three months, these assets were worth over $100,000. Who then was spending money on these monkeys? As Bored Apes became a social phenomenon, celebrities from all categories began to buy Apes. Some were smart and bought for cheap. On the other hand, Justin Bieber paid over 10X what his Bored Ape is worth today. Many of these celebrities had their Apes as their profile pictures on social media. Neymar, a Brazilian Soccer superstar, had one of his two Bored Apes as his Instagram profile picture for over six months. Still, there are 10,000 Bored Apes, so clearly, there had to be some other 'normal' people who also bought into the project.
+    <p>If you were early on Bored Apes, it would be reasonable that an average person would be able to purchase one.
+      However, within three months, these assets were worth over $100,000. Who then was spending money on these monkeys?
+      As Bored Apes became a social phenomenon, celebrities from all categories began to buy Apes. Some were smart and
+      bought for cheap. On the other hand, Justin Bieber paid over 10X what his Bored Ape is worth today. Many of these
+      celebrities had their Apes as their profile pictures on social media. Neymar, a Brazilian Soccer superstar, had
+      one of his two Bored Apes as his Instagram profile picture for over six months. Still, there are 10,000 Bored
+      Apes, so clearly, there had to be some other 'normal' people who also bought into the project.
     </p>
     <h2>Celebrity Bored Apes!</h2>
     <p>Hover over one of the bubbles to see which of your favorite celebrities have purchased a Bored Ape.
@@ -163,8 +198,8 @@
   </div>
 
   <center>
-    <h3> Justin Bieber's Bored Ape #3001. He paid over a million dollars for his Bored Ape. <br> 
-    Current valuations suggest its worth less than ninety thousand dollars.</h3>
+    <h3> Justin Bieber's Bored Ape #3001. He paid over a million dollars for his Bored Ape. <br>
+      Current valuations suggest its worth less than ninety thousand dollars.</h3>
 
     <img src="3001.png" alt="Girl in a jacket" width="500" height="500">
 
@@ -172,39 +207,83 @@
   </center>
 
   <div id="container">
-  <h2>Bored Apes are the Real Deal. NFTs are Here to Stay.</h2>
-  <p> Appearing originally as a joke to many financial investors and a short media craze to news outlets, NFTs and Bored Apes have made a point they need to be acknowledged. When investors take calculated risks, and the art of the NFT is used as a form of self-expression and for advertisement; it's a sign to prepare for the next step of these Digital Assets. In the future, we will see sophisticated financial infrastructure built to support NFTs. The prices we claimed were too high at a hundred thousand dollars may seem like a huge discount five years from now.
-  </p>
+    <h2>Bored Apes are the Real Deal. NFTs are Here to Stay.</h2>
+    <p> Appearing originally as a joke to many financial investors and a short media craze to news outlets, NFTs and
+      Bored Apes have made a point they need to be acknowledged. When investors take calculated risks, and the art of
+      the NFT is used as a form of self-expression and for advertisement; it's a sign to prepare for the next step of
+      these Digital Assets. In the future, we will see sophisticated financial infrastructure built to support NFTs. The
+      prices we claimed were too high at a hundred thousand dollars may seem like a huge discount five years from now.
+    </p>
   </div>
 
   <div id="container">
     <h2>Process</h2>
-    <p> I chose to write about Bored Apes because, as an investor and founder in the NFT space, I thought it would be nice to share why I believe NFTs are so important. Many people seem to dismiss all crypto + web3 because of bad press, but the reality is that people are starting to care more and more about their digital appearance. I have been buying 'skins' in video games since I was 8, so it seems like a natural transition to buy NFTs. The data was sourced from an API company called Gallop. But the data is from the Ethereum Blockchain, where all these transactions are documented. I could have chosen to do this analysis with other NFT projects like Cryptopunks or Azukis, but I thought more people would know about Bored Apes. 
+    <p> I chose to write about Bored Apes because, as an investor and founder in the NFT space, I thought it would be
+      nice to share why I believe NFTs are so important. Many people seem to dismiss all crypto + web3 because of bad
+      press, but the reality is that people are starting to care more and more about their digital appearance. I have
+      been buying 'skins' in video games since I was 8, so it seems like a natural transition to buy NFTs. The data was
+      sourced from an API company called Gallop. But the data is from the Ethereum Blockchain, where all these
+      transactions are documented. I could have chosen to do this analysis with other NFT projects like Cryptopunks or
+      Azukis, but I thought more people would know about Bored Apes.
       <br>
       <br>
-      My story is defined by the following message: NFTs and Bored Apes are important and will continue to become more critical. When people are heavily investing in assets and showing them proudly, it's a sign that other people should pay attention. Last year for NFTs felt like bitcoin in 2017, where everyone bought in and made a meme out of it, and then it crashed shortly after. Progress and acceptance take a long time, so it is normal to see periods of intense volatility. I never really pivoted from my main idea. I just wanted to clarify that there is more to these Bored Apes than high price tags, even though that is one of the most exciting parts.  
+      My story is defined by the following message: NFTs and Bored Apes are important and will continue to become more
+      critical. When people are heavily investing in assets and showing them proudly, it's a sign that other people
+      should pay attention. Last year for NFTs felt like bitcoin in 2017, where everyone bought in and made a meme out
+      of it, and then it crashed shortly after. Progress and acceptance take a long time, so it is normal to see periods
+      of intense volatility. I never really pivoted from my main idea. I just wanted to clarify that there is more to
+      these Bored Apes than high price tags, even though that is one of the most exciting parts.
       <br>
       <br>
-      There was not much data missing. I think of the roughly 28,000 sales that occurred in this period; less than 30 were not in the dataset. I almost considered adjusting for outliers that may have been scammed, but I did not want to alter the integrity of the data. Again, from an ethical standpoint, this was not really a humanitarian story. This story was an introduction to a new asset class which ended up being a social phenomenon. 
+      There was not much data missing. I think of the roughly 28,000 sales that occurred in this period; less than 30
+      were not in the dataset. I almost considered adjusting for outliers that may have been scammed, but I did not want
+      to alter the integrity of the data. Again, from an ethical standpoint, this was not really a humanitarian story.
+      This story was an introduction to a new asset class which ended up being a social phenomenon.
       <br>
       <br>
-      Choosing the charts was the most exciting part of this project. I knew that I wanted to be able to cover both the macro and micro information about Bored Apes, so I was excited that d3 had so much flexibility. I started with an area chart about monthly transaction volume to give an idea of the growth of these assets and the actual size. After talking about volume, I wanted to go into what a Bored Ape is, and the tree map allowed me to show every single feature that could construct an Ape. 
+      Choosing the charts was the most exciting part of this project. I knew that I wanted to be able to cover both the
+      macro and micro information about Bored Apes, so I was excited that d3 had so much flexibility. I started with an
+      area chart about monthly transaction volume to give an idea of the growth of these assets and the actual size.
+      After talking about volume, I wanted to go into what a Bored Ape is, and the tree map allowed me to show every
+      single feature that could construct an Ape.
       <br>
       <br>
-      Next, I brought in a time series bar chart to represent the average price of an asset. I thought a bar chart would be better than a scatter plot here because the bars help show the huge magnitude of the prices and how fast they grew. For the line plot, I got the idea from Professor France, who suggested during the meeting that I must compare different digital assets. I thought the line chart would elegantly show price distribution over time. Lastly, celebrity apes were the 'fun' part of my project, and I felt the cluster chart was a great final graph to show to my reader. It was almost like a game where you could spot who you knew and how much they spent. 
+      Next, I brought in a time series bar chart to represent the average price of an asset. I thought a bar chart would
+      be better than a scatter plot here because the bars help show the huge magnitude of the prices and how fast they
+      grew. For the line plot, I got the idea from Professor France, who suggested during the meeting that I must
+      compare different digital assets. I thought the line chart would elegantly show price distribution over time.
+      Lastly, celebrity apes were the 'fun' part of my project, and I felt the cluster chart was a great final graph to
+      show to my reader. It was almost like a game where you could spot who you knew and how much they spent.
       <br>
       <br>
-      The final takeaways from the project were that D3.js is a wonderful resource for telling stories with data, and secondly, it's quite challenging to tell a story with data. Finding the right way to demonstrate your arguments via visualizations is a complex and artistic process.
+      The final takeaways from the project were that D3.js is a wonderful resource for telling stories with data, and
+      secondly, it's quite challenging to tell a story with data. Finding the right way to demonstrate your arguments
+      via visualizations is a complex and artistic process.
 
     </p>
-    </div>
+  </div>
 
 
   <div id="container">
     <h3>Data Sources</h3>
-    <p> Links
+    <p>
+      Bored Ape Sales Data: <a href="https://gallop.readme.io/reference/getethcollections-1">Here!</a>
+      <br>
+      Bitcoin Price Data: <a href="https://www.in2013dollars.com/bitcoin-price">Here!</a>
+      <br>
+      Ethereum Price Data: <a
+        href="https://finance.yahoo.com/quote/ETH-USD/history?period1=1638244032&period2=1669780032&interval=1mo&filter=history&frequency=1mo&includeAdjustedClose=true">Here!</a>
+      <br>
+      Sotheby's Data: <a
+        href="https://cointelegraph.com/news/101-bored-apes-nft-auction-at-sotheby-s-closes-at-more-than-24m">Here!</a>
+      <br>
+      Celebrity Bored Ape Data: <a href="https://boardroom.tv/bored-ape-nft-celebrity-owners/">Here!</a>
+      <br>
+      Graph Templates from Tiffany France: <a href="https://github.com/tiffanyfrance/CAPP30239_FA22">Here!</a>
+      <br>
     </p>
-    </div>
+
+  </div>
 
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="Graph_Development/monthly_volume_area_chart.js"></script>
@@ -214,4 +293,5 @@
   <script src="Graph_Development/cluster-single.js"></script>
 
 </body>
+
 </html>

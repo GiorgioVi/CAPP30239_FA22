@@ -2,15 +2,15 @@
 d3.csv("./Data/clean_famous.csv").then(data => {
 
 
-    let width = 1000,
+  let width = 1000,
     height = 500;
-  
+
   let svg = d3.select("#cluster")
     .append("svg")
     .attr("width", width)
     .attr("height", height);
 
-    
+
   let rScale = d3.scaleLog()
     .range([5, 25])
     .domain(d3.extent(data, d => d.price));
@@ -52,7 +52,7 @@ d3.csv("./Data/clean_famous.csv").then(data => {
         tooltip
           .style("top", (event.pageY - 10) + "px")
           .style("left", (event.pageX + 10) + "px")
-          .style("background",'#BCC5F7');
+          .style("background", '#BCC5F7');
       })
       .on("mouseout", function () {
         d3.select(this).attr("opacity", 1);
