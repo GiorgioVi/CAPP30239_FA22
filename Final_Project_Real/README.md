@@ -1,6 +1,12 @@
 # Final Project 
 
 
+## Project Information
+### Bored Ape Yacht Club NFTs: Digital Asset to Digital Indentity
+    Per their creator YugaLabs, The Bored Ape Yacht Club is a collection of 10,000 unique Bored Ape NFTs— unique
+      digital collectibles living on the Ethereum blockchain. Since their release in 2021, Bored Apes have become a
+      pillar of the NFT asset class and a sign of social status. Looking back, we need to understand how these assets
+      grew to become important.
 ## Data
 
 1. clean_famous.csv: A csv of famous people who own Bored Apes, their field of work, and how much they paid
